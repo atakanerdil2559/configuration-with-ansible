@@ -8,6 +8,12 @@
   tasks:
     - name: Task Name Here
       ping:
-      
-
-
+    - name: Install telnet
+      package:
+        name:
+          - telnet
+          - elinks
+          - wget
+          - unzip
+        state: present
+        
