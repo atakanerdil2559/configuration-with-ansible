@@ -27,13 +27,11 @@
     - name: Get Key 
       shell: r1soft-setup --get-key http://backup.atakanerdil.com
 
-      
+
 
     - name: Start R1soft Agent
       systemd:
         name: sbm-agent
         state: restarted
+        enabled: yes 
 
-
-    - name: Get Key 
-      shell: r1soft-setup --get-key http://backup.atakanerdil.com
