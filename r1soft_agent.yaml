@@ -9,7 +9,7 @@
     - name: creates a repo 
       copy:
         src: r1soft.repo
-        dest: /etc/yum.repo.d/r1soft.repo
+        dest: /etc/yum.repos.d/r1soft.repo
     
     - name: install R1soft 
       package:
